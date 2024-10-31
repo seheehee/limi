@@ -1,0 +1,721 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+/* header */
+header{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 5;
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 2%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+header h1{
+    width: 120px;
+    height: 60px;
+    overflow: hidden;
+    display: flex; 
+}
+header h1 > a {
+    display: block;
+    width: 100%;
+    background: url(../img/logo_w.png) no-repeat center/cover;
+    background-size: contain;
+
+}
+/* //header_logo */
+
+/* header_util_area */
+header .util_area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    margin-left: auto;
+    text-align: center;
+}
+header .util_area > a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+header .btn_affi,
+header .btn_store {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    height: 50px;
+}
+header .btn_affi {
+    width: 100px;
+    margin-right: -20px;
+}
+header .btn_store {
+    background: #C8A666;
+    border: 1px solid #C8A666;
+    width: 165px;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+header .btn_store::after {
+    content: '';
+    background: url(../img/icon_store.png)no-repeat center/ cover;
+    top: 37%;
+    right: 12%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+header .btn_menu {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 40px;
+}
+header .btn_menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+header .btn_menu span:nth-of-type(1) {
+    top: 20%;
+    right: 0;
+}
+header .btn_menu span:nth-child(2) {
+    top: 45%;
+    right: 0;
+}
+header  .btn_menu span:nth-child(3) {
+    top: 70%;
+    right: 0;
+}
+header .active span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 45%;
+}
+header .btn_menu.active span:nth-of-type(2) {
+    opacity: 0;
+}
+header .btn_menu.active span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 45%;
+}
+/* //header_util_area */
+
+
+/* header_nav */
+header nav {
+    width: 30%;
+    height: 100px;
+    padding: 0 0 0 10%;
+}
+header .gnb {
+    text-align: center;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb > li {
+    display: block;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 2;
+}
+header .gnb > li > a{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Gowun Batang", serif;
+    padding: 0 10px;
+    line-height: 100px;
+}
+header .gnb > li > a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: #C8A666;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+header .gnb > li:hover > a:before,
+header .gnb > li > a:focus:before {
+    width: 100%;
+    left: 0;
+}
+
+/* header_nav _clone  */
+
+
+/* //header */
+
+
+
+/* swiper1 - ilmi_visual */
+
+.ilmi_visual {
+    height: 100vh;
+    overflow: hidden;
+}
+.ilmi_visual .main_text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.ilmi_visual .main_text .s_text {
+    font-size: 64px;
+    font-family: "Gowun Batang", serif;
+    color: #fff;
+}
+.ilmi_visual .main_text .b_text {
+    font-size: 84px;
+    font-weight: 700;
+    font-family: "Gowun Batang", serif;
+    color: #fff;
+    display: block;
+}
+.ilmi_visual .main_text .dining_title {
+    color: #fff;
+    font-size: 60px;
+    font-family: "Gowun Batang", serif;
+    margin-bottom: 20px;
+}
+.ilmi_visual .main_text .dining_text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    opacity: 50%;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 100%;
+}
+.swiper-pagination {
+    color: #4e4e4e;
+}
+
+/* section-best_menu */
+
+#best_menu {
+    text-align: center;
+    background: url(../img/best_bg.png)no-repeat center / cover;
+    height: 100vh;    
+}
+#best_menu .menu_area{
+    display: flex;
+    justify-content: space-between;
+}
+#best_menu span {
+    display: block;
+    color: #C8A666;
+    font-family: "Gowun Batang", serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+#best_menu .ms_text{
+    display: block;
+    padding: 80px 0 10px;
+    color: #C8A666;
+    background: url(../img/icon_line.svg) no-repeat center/ 150px;
+    font-family: "Gowun Batang", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+#best_menu h2 {
+    font-family: "Gowun Batang", serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 50px;
+}
+#best_menu .menu_area strong{
+    display: block;
+    color: #C8A666;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+#best_menu .menu_area p{
+    display: block;
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 15px;
+}
+#best_menu .menu_area .menu_contents .view{
+    background: url(../img/icon_right_0.7.png)no-repeat right/ contain;
+    padding:10px 30px;
+    box-sizing: border-box;
+}
+#best_menu .view .btn_view {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+
+/* section-brand_stroy */
+
+.brand_stroy {
+    background: url(../img/brand_bg.jpg) no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.brand_stroy .brand_area {
+    text-align: left;
+    position: relative;
+    width: 27%;
+    margin-left: 20%;
+}
+.brand_stroy .brand_area .stroy {
+    display: block;
+    padding: 80px 0 10px;
+    color: #C8A666;
+    font-family: "Gowun Batang", serif;
+    font-size: 24px;
+    font-weight: 600;
+    background: url(../img/icon_line.svg) no-repeat center/ 150px;
+    text-align: center;
+}
+.brand_stroy .brand_area h2 {
+    font-size: 64px;
+    font-weight: 400;
+    font-family: "Gowun Batang", serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.brand_stroy .brand_area>a {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.brand_stroy .brand_area>a>p {
+    margin: 0;
+    position: relative;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.brand_stroy .brand_area>a>p:after {
+    content: '';
+    background: #fff;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.5s ease;
+}
+.brand_stroy .brand_area>a>p:hover:after {
+    width: 150px;
+}
+.brand_stroy .brand_area .btn_view {
+    width: 37px;
+    height: 37px;
+    margin-left: 8px;
+}
+.brand_stroy .brand_text {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 16%;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+/* section-new_menu */
+
+#new_menu {
+    text-align: center;
+    background: #FFFBEB;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#new_menu span {
+    display: block;
+    color: #C8A666;
+    font-family: "Gowun Batang", serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+#new_menu .ms_text {
+    display: block;
+    padding: 80px 0 10px;
+    color: #C8A666;
+    background: url(../img/icon_line.svg) no-repeat center/ 150px;
+    font-family: "Gowun Batang", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+#new_menu h2 {
+    font-family: "Gowun Batang", serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 50px;
+}
+#new_menu .new_cont01 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#new_menu .new_cont01 figure:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    background-image: url(../img/icon_new.svg);
+}
+#new_menu .new_cont01 .new_text {
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+#new_menu .new_cont01 .new_text strong {
+    display: block;
+    color: #C8A666;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+#new_menu .new_cont01 .new_text em {
+    display: block;
+    font-family: "Gowun Batang", serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#new_menu .new_cont01 .new_text p {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+#new_menu .new_cont01 .new_text .view {
+    background: url(../img/icon_right_0.7.png)no-repeat right/ contain;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+#new_menu .new_cont01 .new_text .cont01_sub {
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 1px solid #c9c9c9;
+}
+
+/* video_area */
+
+#video_area {
+    display: flex;
+    justify-content: flex-start;
+    height: 60vh;
+    margin: 100px 50px;
+}
+#video_area .v_text{
+    width: 40%;
+    background: #313131;
+    color: #fff;
+    border-top-left-radius: 50px;
+    padding: 100px 70px;
+}
+#video_area .v_text strong{
+    display: block;
+    font-family: "Gowun Batang", serif;
+    color: #C8A666;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#video_area .v_text h3{
+    color: #fff;
+    font-family: "Gowun Batang", serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#video_area .v_text p {
+    display: block;
+    color: #8B898B;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+#video_area .v_text > a{
+    position: relative;
+    display: inline-block;
+    background: url(../img/icon_rifhgt_w.png)no-repeat right/ contain;
+    padding:0 30px 0 0;
+}
+#video_area .v_text > a:hover::before{
+    content: '';
+    background: #fff;
+    width: 110px;
+    height: 1px;
+    position: absolute;
+    bottom: -10px; left: 0;
+    transition: all 0.3s;
+}
+#video_area .video{
+    width: 55%;
+    height: 100%;
+    position: relative;
+}
+#video_area .video figure{
+    height: 100%;
+}
+#video_area .video figure img{
+    height: 100%;
+}
+#video_area .video > a{
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    opacity: 50%;
+    border-radius: 50%;
+}
+#video_area .video > a img {
+    display: inline-block;
+}
+#video_area .video > a:hover {
+    background: #C8A666 url(../img/play-button.png) no-repeat center/cover;
+}
+
+/* sns_area */
+
+#sns_area {
+    background: #FFFBEB;
+    padding: 100px 50px;
+}
+#sns_area .sns_text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#sns_area .sns_text .s_text {
+    display: block;
+    padding: 80px 0 10px;
+    color: #C8A666;
+    background: url(../img/icon_line.svg) no-repeat center/ 150px;
+    font-family: "Gowun Batang", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+#sns_area .sns_text h2 {
+    font-family: "Gowun Batang", serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #000;
+}
+#sns_area .sns_text .view {
+    display: inline-block;
+    background: url(../img/icon_right_0.7.png)no-repeat right/ contain;
+    padding:10px 30px;
+    box-sizing: border-box;
+}
+#sns_area .sns_img ul {
+    display: flex;
+    justify-content: space-between;
+}
+#sns_area .sns_img ul li{
+    width: 23%;
+    position: relative;    
+}
+#sns_area .sns_img ul li img {
+    width: 100%;
+}
+#sns_area .sns_img ul li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+}
+#sns_area .sns_img ul li .img01 {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+#sns_area .sns_img ul li .img02,
+#sns_area .sns_img ul li p{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 2;
+}
+#sns_area .sns_img ul li .img02{
+    left: 50%; bottom: 50%; 
+    width: 35px; height: 35px;
+    transform: translateX(-50%) scale(0.8);
+}
+#sns_area .sns_img ul li p{
+    right:10px; bottom: 20px;
+    color: #fff;
+    font-family: "Gowun Batang", serif;
+    font-size: 18px;
+    font-weight: 500;
+    transform: translateY(10px); 
+}
+#sns_area .sns_img ul li a:hover .img02,
+#sns_area .sns_img ul li a:hover p {
+    opacity: 1;
+    transform: all 0.5s ease;
+}
+#sns_area .sns_img ul li a:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    transform: scale(2);
+    z-index: 1;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    background: #302F2E;
+    height: 45vh;
+    color: #fff;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    line-height: 2.5;
+}
+footer .f_left{
+    float: left;
+    width: 40%;
+}
+footer .f_left .f_logo{
+    margin-bottom: 30px;
+}
+footer .f_left .f_logo > img{
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+footer .f_right{
+    float: right;
+}
+footer .f_cont01{
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 30px;
+}
+footer .f_cont01 p {
+    margin-right: 20px;
+}
+footer .f_cont01 p:first-child{
+    color: #C8A666;
+}
+footer .f_cont02 {
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    color: #dddddd;
+}
+footer .f_cont02 p {
+    margin-right: 20px;
+    position: relative;
+}
+footer .f_cont02 p + p:before{
+    position: absolute;
+    content: '';
+    background: #7d7d7d;
+    width: 1px;
+    height: 15px;
+    top: 50%; /* 가운데 정렬 */
+    left: -10px; /* 왼쪽에 위치 */
+    transform: translateY(-50%); /* 세로 가운데 정렬 */
+}
+footer .f_cont03 {
+    color: #dddddd;
+}
+footer .f_right{
+    text-align: right;
+    position: relative;
+}
+footer .f_right .call span {
+    display: block;
+    color: #C8A666;
+    font-size: 30px;
+}
+footer .f_right .call p {
+    line-height: 2.5;
+}
+footer .f_right .f_family {
+    position: relative;
+    border-bottom: 1px solid #919191;
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+footer .f_right .f_family button{
+    position: relative;
+}
+footer .f_right .f_family button::after{
+    content: '';
+    position: absolute;
+    background: url(../img/icon-arrow-up_w.png) no-repeat center/ cover ;
+    width: 15px; height: 15px;
+    top: 0; right: -120px;
+}
+footer .f_right .btnFamily {
+    background: none;
+    color: #ddd;
+}
+footer .f_right > .f_family > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #e9e9e9;
+    color: #555;
+    display: none;
+}
+footer .f_right > .f_family > ul li:first-child{
+    border-bottom: 1px solid #7e7d7c;
+}
+footer .f_right > .f_family > ul li a{
+    display: block;
+    padding-left: 5px;
+}

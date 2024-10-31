@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+                                <g transform="translate(-905 -3161)">
+                                    <g data-name="Polygon 1" style="fill:none">
+                                        <path d="M13.915 4.386a3 3 0 0 1 5.169 0l11.25 19.091A3 3 0 0 1 27.75 28H5.25a3 3 0 0 1-2.585-4.523z" style="stroke:none" transform="rotate(90 -1110.5 2089.5)"></path>
+                                        <path class="svg_play" d="M16.5 7.879 7 24h19L16.5 7.879m0-4.97c1.002 0 2.004.492 2.585 1.477l11.25 19.09c1.178 2-.264 4.524-2.585 4.524H5.25c-2.321 0-3.763-2.523-2.585-4.523l11.25-19.091A2.973 2.973 0 0 1 16.5 2.909z" style="fill:#c27a34;stroke:none" transform="rotate(90 -1110.5 2089.5)"></path>
+                                    </g>
+                                </g>
+                            </svg>
